@@ -2,7 +2,7 @@ import turtle
 from move import*
 
 def main():
-    file = "./test.txt"
+    file = "../data/test.txt"
     path = readPath(file)
     wn = turtle.Screen()
     wn.bgcolor("black")
@@ -18,5 +18,6 @@ def main():
             turnRight(curseur, int(path[i][1]))
     
     wn.mainloop()
-    
-main()
+
+if __name__ == "__main__":
+    main()
